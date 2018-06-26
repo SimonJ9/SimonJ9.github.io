@@ -1,0 +1,66 @@
+.l_box {
+	width: 30%;
+	float: left;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: left;
+	margin: auto;
+	margin-top: 5%;
+}
+
+.r_box { 
+	width: 68%; 
+	float: right;
+	margin-top: 5%;
+}
+
+.l_box h2 {
+	color: #333; 
+	font-size: 18px; 
+	line-height: 30px; 
+	padding-left: 20px; 
+	background: #fff;
+}
+
+.r_box li { background: rgba(255,255,255,0.8); padding: 15px; overflow: hidden; color: #797b7c; margin-bottom: 20px }
+.r_box li h3 { font-size: 16px; line-height: 25px; text-shadow: #FFF 1px 1px 1px }
+.r_box li h3 a { color: #222 }
+.r_box li h3 a:hover { color: #000; text-decoration: underline }
+
+.profile img {
+	width: 100%;
+}
+.profile p {
+	line-height: 24px;
+	font-size: 14px;
+}
+.profile i {
+	float: left; 
+	clear: left; 
+	overflow: hidden;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+.profile h2 {
+	color: #333; 
+	font-size: 18px; 
+	line-height: 30px; 
+	padding-left: 20px; 
+	background: rgba(255, 255, 255, 0.5)
+}
+
+/* body content */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

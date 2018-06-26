@@ -1,0 +1,27 @@
+
+/*defined in base*/
+article
+{
+	margin-top: 40px;
+}
+
+.box {
+	max-width: 1000px;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: left;
+	padding: 20px;
+}
+
+#first {
+	margin-top: 160px;
+}
+
+.box h2 {
+	font-size: 28px;
+	padding-bottom: 20px;
+}
+
+.box p {
+	font-size: 22px;
+}
