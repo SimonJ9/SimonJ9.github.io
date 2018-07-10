@@ -9,7 +9,7 @@ a:hover { text-decoration: none; color: #000; }
 body {
 	font: 15px Arial;
 	color: #555;
-	background: #f2f2f2;
+	background: #5a5a5a;
 }
 
 nav {
@@ -27,16 +27,16 @@ ul, li {
 	width: 100%;
 	height: 60px;
 	line-height: 60px;
-	background: rgba(255,255,255,.9);
+	background: rgba(255,255,255,0.9);
 	text-align: center;
 	border-bottom: 1px solid #ddd;	
-	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
 	z-index: 999;
 }
-#starlist {
+#navlist {
 	float: right;
 }
-#starlist li { 
+#navlist li { 
 	float: left; 
 	display: inline-block; 
 	padding: 0 0 0 40px; 
@@ -55,8 +55,9 @@ ul, li {
 .logo img {
 	float: left;
 	clear: left;
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
+	padding-top: 10px;
 }
 
 
