@@ -1,16 +1,8 @@
-
-/*defined in base*/
-article
-{
-	margin-top: 40px;
-}
-
 .box {
 	max-width: 1000px;
 	margin: auto;
-	background: rgba(255, 255, 255, 0.5);
+	background: #dedede;
 	text-align: left;
-	padding: 20px;
 }
 
 #first {
@@ -19,9 +11,12 @@ article
 
 .box h2 {
 	font-size: 28px;
-	padding-bottom: 20px;
+	padding: 20px;
+	background: #fff;
 }
 
 .box p {
 	font-size: 22px;
+	padding: 20px;
+	line-height: 40px;
 }

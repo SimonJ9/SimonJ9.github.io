@@ -11,7 +11,6 @@
 .l_box {
 	width: 30%;
 	float: left;
-	background: rgba(255, 255, 255, 0.8);
 	text-align: left;
 	margin: auto;
 	margin-top: 5%;
@@ -28,6 +27,12 @@
 	line-height: 18px;	
 }
 
+.l_box li {
+	margin-bottom: 20px;
+	overflow: hidden;
+	background: #dedede;
+}
+
 .r_box { 
 	width: 68%; 
 	float: right;
@@ -35,7 +40,7 @@
 }
 
 .r_box li { 
-	background: rgba(255,255,255,0.8); 
+	background: #dedede; 
 	overflow: hidden; 
 	color: #333; 
 	margin-bottom: 20px;
@@ -50,7 +55,9 @@
 .r_box li a { 
 	color: #222;
 	float: right;
-	padding: 45px;
+	padding-right: 45px;
+	padding-top: 24px;
+	padding-bot: 20px;
 }
 .r_box li a:hover {
 	color: #000; 
@@ -65,15 +72,14 @@
 }
 .r_box li p 
 {
-	padding: 15px; 
-	padding: 20 30 20 30px;
+	padding: 30px 30px 20px 30px;
+	line-height: 24px;
 }
 
 .profile img {
 	width: 100%;
 	float: left; 
 	clear: left; 
-	overflow: hidden;
 	border-radius: 50%;
 	width: 80px;
 	height: 80px;
@@ -81,15 +87,16 @@
 }
 .profile h2 {
 	font-size: 18px; 
-	line-height: 30px; 
+	line-height: 40px; 
 	padding-left: 20px; 
-	background: rgba(255, 255, 255, 0.5)
+	background: #fff;
 }
 
 .profile h5 {
 	font-size: 14px;
 	padding-top: 35px;
 }
+
 
 
 
