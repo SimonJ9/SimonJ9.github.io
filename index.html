@@ -3,12 +3,15 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="stylesheet" href="css/base.css?v=1.0">
-	<link rel="stylesheet" href="css/index.css?v=1.0">
-    <title>SimonJiang - Home</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!--<link rel="stylesheet" href="css/index.css">-->
+    <title>Simon Jiang's Page</title>
 </head>
 
 <body>
+	<!--
 	<header class="header-nav">
 	<nav>
 		<div class="logo">
@@ -21,75 +24,187 @@
 		</ul>
 	</nav>
 	</header>
+	-->
 
-	<article>
-	<div class="l_box">
-	
-		<!--profile box-->
-		<li>
-		<div class="profile">
-			<h2><b><a href="https://github.com/simonj9" target="_blank">@SimonJ9</a></b></h2>
-			<img src="images/logo.jpg">
-			<h5>Hi, I'm Hantian (Simon) Jiang. Welcome to my homepage.</h5>
+	<header>
+		<div id="head">
+			<h1 id="logo" class="text-center">
+				<img class="img-circle" src="assets/images/guy.jpg" alt="">
+				<span class="title">Simon Jiang</span>
+				<span class="tagline">Game Developer<br>
+					<br>
+					<p>simonj142857@gmail.com</p>
+				</span>
+			</h1>
 		</div>
-		</li>
-		
-		<!--about box-->
-		<li>
-		<div class="profile">
-			<h2><b>About Me</b></h2>
-			<h5>I'm a game developer. I worked on several simulation projects with Unity3D and 
-			steamVR library. My focus was on mechanics development, balancing and level design. 
-			</h5>
-		</div>
-		</li>
-		
-		<!--mascot box-->
-	</div>
-	
-	<div class="r_box">		
-    
-    <li><h2>&nbsp;&nbsp;My Skill Set</h2>
-        <p>
-          <b>Game Engines:</b> Unity3D, Unreal4, GameMaker Studio </br>
-          <b>Languages:</b> C/C++, C#, Python, Javascript </br>
-          <b>Graphics:</b> Photoshop, Maya</p>
-    </li>
-    
-    <li><h2>&nbsp;&nbsp;What I Worked On</li>
-        
-		<!--<a href = "/"><!--Current Project-->
-		<li><h2><i>VR Slicer: Research Project</i></h2>
-			<img src="images/VRslicer.gif">
-			<p>A medical image viewer in which the user can 
-			observe the 3d model of human body with VR helmet and 
-			slice the model to view CT/MRI scan at the slicing position. 
-			Made in Unity with steamVR and ray tracing. 
-			</p>
-		</li>
-		<!--</a>-->
-		
-		<li><h2><i>The Aquatic Messenger: VR Underwater Simulation</i></h2>
-			<img src="images/TAM.png">
-			<p>VR underwater simulation game, allows you to 
-			interact with creatures from different eras and 
-			learn how they affect the water.</p>
-			<a href="https://sites.google.com/view/aquaticmessenger/home" target="_blank">View Site</a>
-		</li>
-		
-		<li><h2><i>The Dawn: Undergraduate School Project</i></h2>
-			<img src="images/TD.jpg">
-			<p>We made this mini multiplayer game to learn 
-			network feature through Unreal 4. The team consists 
-			of 3 programmers... </p>
-			<a href="https://github.com/SimonJ9/EGD_FINAL" target="_blank">View Source</a>
-		</li>
+	</header>
 
+	<!--features-->
+	<section id="feature" class="section-padding wow fadeIn delay-05s">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="wrap-item text-center">
+						<div class="item-img">
+							<i class="fa-solid fa-gears"></i>
+						</div>
+						<h3 class="pad-bt15">Gameplay</h3>
+						<p>I have worked on various projects using Unity 3D and Unreal Engine. I write game components, 
+							tools/plugins, and work closely with artists and designers on level design. 
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="wrap-item text-center">
+						<div class="item-img">
+							<i class="fa-solid fa-dice-d20"></i>
+						</div>
+						<h3 class="pad-bt15">VFX</h3>
+						<p>I work on particles, shaders and post processing when the team is lack of dedicated 
+							technical artists. I love working in these areas because I can make use of my math skills. 
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="wrap-item text-center">
+						<div class="item-img">
+							<i class="fa-solid fa-globe"></i>
+						</div>
+						<h3 class="pad-bt15">Networking</h3>
+						<p>2 years experience in net code, sockets and Rest APIs. I worked on network solutions 
+							either as a host-client LAN party style, or dedicated servers hosted on AWS. 
+						</p>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---->
+
+
+	<!-- Projects Start -->
+	<div class="project" id="project">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Projects</h2>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-6 mb-4 d-flex align-items-stretch">
+					<div class="card">
+						<img src="images/casino.jpg" alt="project">
+						<div class="project-text">
+							<h2>Online Casino Series</h2>
+							<div class="project-meta">
+								<p><i class="far fa-solid fa-hammer"></i>Unity</p>
+								<p><i class="fa-solid fa-layer-group"></i>Windows, Linux, Webgl</p>
+								<p><i class="far fa-regular fa-calendar-days"></i>2021 ~ Now</p>
+							</div>
+							<p>
+								I'm currently hired to develop a series of casino games. I engineered 
+								the newtork solution, UI/UX, and multi-platform support. I also developed 
+								reusable plugins to help with game content creation.
+							</p>
+							<!--<a class="btn" href="pages/p_casino.html">Read More<i class="fa fa-angle-right"></i></a>-->
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 mb-4 d-flex align-items-stretch">
+					<div class="card">
+						<img src="images/VRslicer.gif" alt="project">
+						<div class="project-text">
+							<h2>MRI Slicer VR</h2>
+							<div class="project-meta">
+								<p><i class="fa-solid fa-hammer"></i>Unity</p>
+								<p><i class="fa-solid fa-layer-group"></i>Windows</p>
+								<p><i class="far fa-regular fa-calendar-days"></i>2019</p>
+							</div>
+							<p>
+								This is a VR simulation app that allows the patient to view their MRI 
+								scans in a 3D space. You can view the slice of your body organ from any 
+								angle with the VR controller in your hand. 
+							</p>
+							<!--<a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>-->
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 mb-4 d-flex align-items-stretch">
+					<div class="card">
+						<img src="images/TD.jpg" alt="project">
+						<div class="project-text">
+							<h2>The Dawn</h2>
+							<div class="project-meta">
+								<p><i class="fa-solid fa-hammer"></i>Unreal</p>
+								<p><i class="fa-solid fa-layer-group"></i></i>Windows</p>
+								<p><i class="far fa-regular fa-calendar-days"></i>2018</p>
+							</div>
+							<p>
+								We made this mini collaborative FPS with Unreal 4. You can join the 
+								host for a multiplayer session. Your team needs to drive the ship to 
+								the destination. During the trip, enemies will stop your ship. Your team 
+								needs to clear the enemies, and have someone controlling the ship 
+								at the same time. 
+							</p>
+							<!--<a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>-->
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 mb-4 d-flex align-items-stretch">
+					<div class="card">
+						<img src="images/TAM.png" alt="project">
+						<div class="project-text">
+							<h2>The Aquatic Messenger</h2>
+							<div class="project-meta">
+								<p><i class="fa-solid fa-hammer"></i>Unity</p>
+								<p><i class="fa-solid fa-layer-group"></i>Windows</p>
+								<p><i class="far fa-regular fa-calendar-days"></i>2017~2018</p>
+							</div>
+							<p>
+								VR underwater simulation game, allows you to interact with planktons from 
+								different eras and learn how they affect the water. You can travel between 
+								eras, scale yourself down to the size of planktons and grab these creatures 
+								with the VR controllers. 
+							</p>
+							<!--<a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>-->
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
 	</div>
-    </article>
-	
-	<footer class="footer-bar">
-		<p>By Simon Jiang @SimonJ9</p>
+	<!-- Projects End -->
+
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 widget">
+					<h3 class="widget-title">Contact</h3>
+					<div class="widget-body">
+						<p>(215) 817-5703<br>
+							<a href="mailto:#">simonj142857@gmail.com</a><br>
+							<br>
+						</p>	
+					</div>
+				</div>
+
+				<div class="col-lg-6 widget">
+					<h3 class="widget-title">Links</h3>
+					<div class="widget-body">
+						<p class="follow-me-icons">
+							<a href="https://github.com/SimonJ9"><i class="fa-brands fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/hantian-simon-jiang"><i class="fa-brands fa-linkedin"></i></a>
+						</p>
+					</div>
+				</div>
+
+			</div> <!-- /row of widgets -->
+		</div>
 	</footer>
+
 </body>
 </html>
