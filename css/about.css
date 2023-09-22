@@ -1,0 +1,22 @@
+.box {
+	max-width: 1000px;
+	margin: auto;
+	background: #dedede;
+	text-align: left;
+}
+
+#first {
+	margin-top: 160px;
+}
+
+.box h2 {
+	font-size: 28px;
+	padding: 20px;
+	background: #fff;
+}
+
+.box p {
+	font-size: 22px;
+	padding: 20px;
+	line-height: 40px;
+}

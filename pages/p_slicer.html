@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>Project - MRI Slicer VR</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<!-- Icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+
+<body>
+	<header>
+		<div id="head">
+			<h1 id="logo" class="text-center">
+				<!--<img class="img-circle" src="assets/images/guy.jpg" alt="">-->
+				<span class="title">Simon Jiang</span>
+				<span class="tagline">Game Developer Generalist<br>
+					<br>
+					<p>simonj142857@gmail.com</p>
+				</span>
+			</h1>
+		</div>
+
+		<nav class="navbar navbar-expand-sm navbar-default bg-light">
+			<div class="container-fluid">
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			  
+				<div class="navbar-collapse collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#feature">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="../index.html#project">Projects</a>
+						</li>
+					</ul>
+				</div>			
+			</div>	
+		</nav>
+	</header>
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			
+			<!-- Article main content -->
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">MRI Slicer VR</h1>
+				</header>
+
+				<p><img src="../images/projects/mrivr/mri1.jpg" alt="Img1"></p>
+
+				<p>MRI scans are a stack of images. Working with thousands of scans have been a lengthy and 
+				  difficult job for the doctors. So this project got proposed: We put all the MRI scans in 
+				  3D space, and let the doctor slice them with a VR controller in hand. 
+				</p>
+				
+				<p>MRI scans are stored in DICOM files, which contains all the vertices, window sizes, patient 
+				  info etc. To render the scans in 3D space, I started by developing a data serializer which 
+				  extracts positions and colors of all the vertices, and stores them as arrays of Vector3. 
+				</p>
+		  
+				<p>Then I developed a shader in CG to draw all the vertices in 3D space. The shader uses Ray 
+				  Marching to accumulate vertex colors of multiple scans. Since all the scans are squares, I 
+				  used a cube mesh to get the boundary. 
+				</p>
+		  
+				<p>Paired with the volumetric shader, I developed the slicing mechanism by passing the angle of 
+				  the slicing plane to the shader, calculating the projection plane, and setting all the vertices 
+				  above that projection plane to be transparent. 
+				</p>
+				<p><img src="../images/projects/mrivr/mri3.jpg" alt="Img1"></p>
+		  
+				<p>I also worked a bit on the UI. But that was not the focus on this prototype. Anyway, here is 
+				  the final outcome tested in an Oculus headset. 
+				</p>
+				
+				<p><img src="../images/projects/mrivr/project-VRslicer.gif" alt="Img1"></p>
+				<p><img src="../images/projects/mrivr/mri4.jpg" alt="Img1"></p>
+				<p><img src="../images/projects/mrivr/mri2.jpg" alt="Img1"></p>
+			</article>
+			<!-- /Article -->
+
+			<!-- Sidebar -->
+			<aside class="col-md-4 sidebar sidebar-left">
+				<div class="widget">
+					<h4>What I worked on</h4>
+					<ul>
+						<li>Data serialization tools (DICOM, fbx)</li>
+						<li>Ray tracing shaders & slicing plane shaders</li>
+						<li>Steam VR controller</li>
+						<li>UI In VR</li>
+					</ul>
+				</div>
+				
+			</aside>			
+			<!-- /Sidebar -->
+			
+		</div>
+	</div>	<!-- /container -->
+	
+</main>
+
+</body>
+</html>

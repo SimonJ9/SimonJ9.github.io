@@ -1,1 +1,252 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/nodexnew.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/nodexnew.png"/><link rel="manifest" href="/manifest.json"/><title>Simon Jiang - Home</title><script type="text/javascript">!function(n){if("/"===n.search[1]){var a=n.search.slice(1).split("&").map((function(n){return n.replace(/~and~/g,"&")})).join("?");window.history.replaceState(null,null,n.pathname.slice(0,-1)+a+n.hash)}}(window.location)</script><script defer="defer" src="/static/js/main.09013da7.js"></script><link href="/static/css/main.817a1bf0.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<!-- Icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!--<link rel="stylesheet" href="css/index.css">-->
+    <title>Simon Jiang's Home</title>
+</head>
+
+<body>
+	<!--
+	<header class="header-nav">
+	<nav>
+		<div class="logo">
+			<img src="images/logo.jpg">
+			<h2>Simon Jiang's Homepage</h2>
+		</div>
+		<ul id="navlist">
+		<li><a href = "index.html">Home</a></li>
+		<li><a href = "about.html">About</a></li>
+		</ul>
+	</nav>
+	</header>
+	-->
+
+	<header>
+		<div id="head">
+			<h1 id="logo" class="text-center">
+				<!--<img class="img-circle" src="assets/images/guy.jpg" alt="">-->
+				<span class="title">Simon Jiang</span>
+				<span class="tagline">Game Developer Generalist<br>
+					<br>
+					<p>simonj142857@gmail.com</p>
+				</span>
+			</h1>
+		</div>
+
+		<nav class="navbar navbar-expand-sm navbar-default bg-light">
+			<div class="container-fluid">
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			  
+				<div class="navbar-collapse collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#feature">About</a>
+						</li>
+
+						<!--
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More Pages <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="sidebar-left.html">Left Sidebar</a></li>
+								<li><a href="sidebar-right.html">Right Sidebar</a></li>
+								<li><a href="single.html">Blog Post</a></li>
+							</ul>
+						</li>
+						-->
+						<li class="nav-item">
+							<a class="nav-link" href="#project">Projects</a>
+						</li>
+					</ul>
+				
+				</div><!--/.nav-collapse -->			
+			</div>	
+		</nav>
+	</header>
+
+	<!--features-->
+	<section id="feature" class="section-padding wow fadeIn delay-05s">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="wrap-item text-center">
+						<div class="item-img">
+							<i class="fa-solid fa-gears"></i>
+						</div>
+						<h3 class="pad-bt15">Gameplay</h3>
+					</div>
+					<p class="lh-base">
+						I have worked as a generalist developer on several projects, from commercial games to educational simulation. 
+						I have experience in developing gameplay logics in Unity and Unreal Engine, and optimizing for multiple platforms 
+						including PC, Linux, Webgl and IOS. 
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="wrap-item text-center">
+						<div class="item-img">
+							<i class="fa-solid fa-desktop"></i>
+						</div>
+						<h3 class="pad-bt15">Asset Integration</h3>
+					</div>
+					<p class="lh-base">
+						I work closely with designers and artists, and provide custom tools depending on project needs. Art asset integration 
+						could always be a challenge, and I strive to make process as smooth as possible. During my previous work, I worked on 
+						shaders, animation tools, asset management tools and so on. 
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="wrap-item text-center">
+						<div class="item-img">
+							<i class="fa-solid fa-globe"></i>
+						</div>
+						<h3 class="pad-bt15">Networking</h3>
+					</div>
+					<p class="lh-base">
+						Sometimes the project requires server authorization. I have gained some experience in implementing player state 
+						preservation with NoSQL Databases, real time data broadcasting with UDP and websocket, and custom Http Client for 
+						game engines. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---->
+
+
+	<!-- Projects Start -->
+	<div class="project" id="project">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Projects</h2>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-6 mb-4 d-flex align-items-stretch">
+					<div class="card">
+						<img src="images/projects/slots/IMG_0109.JPG" alt="project">
+						<div class="project-text">
+							<h2>Slot Machine Series</h2>
+							<div class="project-meta">
+								<p><i class="far fa-solid fa-hammer"></i>Unity</p>
+								<p><i class="fa-solid fa-layer-group"></i>Windows, Linux, Webgl</p>
+								<p><i class="far fa-regular fa-calendar-days"></i>2021 ~ Now</p>
+							</div>
+							<p>
+								I worked on a series of slot machines for a startup studio. I implemented the
+								server authorization, game UIs, asset pipeline and multi-platform support. I also developed 
+								tools for content creation.
+							</p>
+							<a class="btn" href="pages/p_casino.html">Read More<i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 mb-4 d-flex align-items-stretch">
+					<div class="card">
+						<img src="images/projects/mrivr/mri4.jpg" alt="project">
+						<div class="project-text">
+							<h2>MRI Slicer VR</h2>
+							<div class="project-meta">
+								<p><i class="fa-solid fa-hammer"></i>Unity</p>
+								<p><i class="fa-solid fa-layer-group"></i>Windows</p>
+								<p><i class="far fa-regular fa-calendar-days"></i>2019</p>
+							</div>
+							<p>
+								This is a VR simulation app that allows the patient to view their MRI 
+								scans in a 3D space. The users can view the slice of their body organs from arbitrary 
+								angle with the VR controllers. 
+							</p>
+							<a class="btn" href="pages/p_slicer.html">Read More <i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 mb-4 d-flex align-items-stretch">
+					<div class="card">
+						<img src="images/TD.jpg" alt="project">
+						<div class="project-text">
+							<h2>The Dawn</h2>
+							<div class="project-meta">
+								<p><i class="fa-solid fa-hammer"></i>Unreal</p>
+								<p><i class="fa-solid fa-layer-group"></i></i>Windows</p>
+								<p><i class="far fa-regular fa-calendar-days"></i>2018</p>
+							</div>
+							<p>
+								This was my capstone project, and my first experience in Unreal Engine. 
+								We made this mini collaborative FPS which supports multiplayer via LAN. 
+								We experimented with the networking system, terrain system and controllers 
+								of the engine. 
+							</p>
+							<a class="btn" href="pages/p_dawn.html">Read More <i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 mb-4 d-flex align-items-stretch">
+					<div class="card">
+						<img src="images/TAM.png" alt="project">
+						<div class="project-text">
+							<h2>The Aquatic Messenger</h2>
+							<div class="project-meta">
+								<p><i class="fa-solid fa-hammer"></i>Unity</p>
+								<p><i class="fa-solid fa-layer-group"></i>Windows</p>
+								<p><i class="far fa-regular fa-calendar-days"></i>2017~2018</p>
+							</div>
+							<p>
+								Underwater simulation with VR. Interact with the environments from different era, 
+								and learn about hundreds of underwater creatures. 
+							</p>
+							<a class="btn" href="pages/p_tam.html">Read More <i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Projects End -->
+
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 widget">
+					<h3 class="widget-title">Contact</h3>
+					<div class="widget-body">
+						<p>(215) 817-5703<br>
+							<a href="mailto:#">simonj142857@gmail.com</a><br>
+							<br>
+						</p>	
+					</div>
+				</div>
+
+				<div class="col-lg-6 widget">
+					<h3 class="widget-title">Links</h3>
+					<div class="widget-body">
+						<p class="follow-me-icons">
+							<a href="https://github.com/SimonJ9"><i class="fa-brands fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/simon96-jiang"><i class="fa-brands fa-linkedin"></i></a>
+						</p>
+					</div>
+				</div>
+
+			</div> <!-- /row of widgets -->
+		</div>
+	</footer>
+
+</body>
+</html>
