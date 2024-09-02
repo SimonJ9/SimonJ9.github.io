@@ -33,11 +33,14 @@
 	<header>
 		<div id="head">
 			<h1 id="logo" class="text-center">
-				<!--<img class="img-circle" src="assets/images/guy.jpg" alt="">-->
+				<img class="img-circle" src="images/Header.jpg" alt="">
 				<span class="title">Hi, I'm Simon Jiang</span>
-				<span class="tagline">Game Developer<br>
-					<br>
-					<p>simonj142857@gmail.com</p>
+				<span class="tagline">Game Developer, Freelancer<br>
+					<br>					
+					<p style="font-size: 30px;">
+						<a href="https://github.com/SimonJ9"><i class="fa-brands fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/simon96-jiang"><i class="fa-brands fa-linkedin"></i></a>
+					</p>
 				</span>
 			</h1>
 		</div>
@@ -48,14 +51,17 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-			  
+
 				<div class="navbar-collapse collapse" id="navbarSupportedContent">
+	  
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><p></p></li>
+<!--	
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 						</li>
-
-						<!--
+-->
+<!--
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More Pages <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -64,15 +70,17 @@
 								<li><a href="single.html">Blog Post</a></li>
 							</ul>
 						</li>
-						-->
+-->
+<!--
 						<li class="nav-item">
 							<a class="nav-link" href="#project">Projects</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#work">Work</a>
 						</li>
+-->
 					</ul>
-				
+
 				</div><!--/.nav-collapse -->			
 			</div>	
 		</nav>
@@ -82,7 +90,7 @@
 	<section id="feature" class="section-padding wow fadeIn delay-05s">
 		<div class="container">
 			<div class="section-header text-center">
-				<h2>What I Do</h2>
+				<h2>Summary</h2>
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-6 col-xs-12">
@@ -90,13 +98,13 @@
 						<div class="item-img">
 							<i class="fa-solid fa-gears"></i>
 						</div>
-						<h3 class="pad-bt15">Gameplay</h3>
+						<h3 class="pad-bt15">Development</h3>
 					</div>
 					<p class="lh-base">
-						&#x2022 Core mechanics development<br/>
+						&#x2022 Game mechanics<br/>
 						&#x2022 UI development<br/>
-						&#x2022 Shader & look development<br/> 
-						&#x2022 Cross platform optimization<br/>
+						&#x2022 Shader development<br/> 
+						&#x2022 Multiplayer<br/>
 					</p>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12">
@@ -104,12 +112,11 @@
 						<div class="item-img">
 							<i class="fa-solid fa-desktop"></i>
 						</div>
-						<h3 class="pad-bt15">Asset Integration</h3>
+						<h3 class="pad-bt15">Asset Management</h3>
 					</div>
 					<p class="lh-base">
-						&#x2022 Asset standardization with Photoshop & Blender<br/>
-						&#x2022 Custom tools/shaders development<br/>
-						&#x2022 Render pipeline features<br/>
+						&#x2022 Art asset standardization<br/>
+						&#x2022 Custom tools development<br/>
 						&#x2022 Technical support for the art team<br/>
 					</p>
 				</div>
@@ -118,13 +125,12 @@
 						<div class="item-img">
 							<i class="fa-solid fa-globe"></i>
 						</div>
-						<h3 class="pad-bt15">Networking</h3>
+						<h3 class="pad-bt15">Integration</h3>
 					</div>
 					<p class="lh-base">
-						&#x2022 Server authorization<br/>
-						&#x2022 Mirror, Photon, Darkrift, Unity Netcode, Unreal<br/>
-						&#x2022 Infrastructure development for AWS<br/>
-						&#x2022 Middleware between the client & database<br/>
+						&#x2022 Cloud service: AWS, Google Cloud, Azure<br/>
+						&#x2022 Project management: Git, Jira, Perforce<br/>
+						&#x2022 Custom middleware development<br/>
 					</p>
 				</div>
 			</div>
@@ -137,6 +143,25 @@
 	<div class="project" id="project">
 		<div class="container">
 			<div class="section-header text-center">
+				<h2>Currently Working On</h2>
+			</div>
+
+			<div class="col-lg-6 mb-4 d-flex align-items-stretch">
+				<div class="card">
+					<img style="object-fit: contain" src="images/projects/ChokePoint.jpg" alt="project">
+					<div class="project-text">
+						<h2>WWII Online: Chokepoint</h2>
+						<p>
+							Cornered Rat Software
+						</p>
+						<a class="btn" href="https://store.steampowered.com/app/1576780/WWII_Online_Chokepoint/" target="_blank" rel="noopener noreferrer">Steam Page<i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<br><br><br>
+
+			<div class="section-header text-center">
 				<h2>Projects</h2>
 			</div>
 			<div class="row">
@@ -145,17 +170,16 @@
 					<div class="card">
 						<img src="images/projects/slots/IMG_0109.JPG" alt="project">
 						<div class="project-text">
-							<h2>Slot Machine Series</h2>
+							<h2>Online Slot Machine</h2>
 							<div class="project-meta">
 								<p><i class="far fa-solid fa-hammer"></i>Unity</p>
 								<p><i class="fa-solid fa-layer-group"></i>Windows, Linux, Webgl</p>
 								<p><i class="far fa-regular fa-calendar-days"></i>2021 ~ Now</p>
 							</div>
 							<p>
-								I worked as the lead developer in a startup studio and shipped a series of slot games to 
-								our clients' platforms. I developed the game clients in Unity, networking APIs in ASP.NET Core and 
-								AWS, real-time networking features in socket.io. I also created custom tools for art asset integration and 
-								multi-platform support. 
+								I worked as the lead developer in a startup studio in Fort Worth, TX. We shipped a series of slot games to 
+								our clients' physical stores and cloud platforms. I workd in Unity, ASP.NET Core, MSSQL, AWS and Nodejs. I 
+								also created custom tools for the artists. 
 							</p>
 							<a class="btn" href="pages/p_casino.html">Read More<i class="fa fa-angle-right"></i></a>
 						</div>
@@ -227,8 +251,6 @@
 		</div>
 	</div>
 	<!-- Projects End -->
-
-
 
 	<!-- Work Start 
 	<div class="work" id="work">

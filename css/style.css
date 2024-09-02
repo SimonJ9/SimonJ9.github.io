@@ -238,6 +238,7 @@ html {
     overflow: hidden;
     border: 9px solid rgba(0, 0, 0, 0.05);
     margin: 0 auto;
+    border-radius: 50%;
   }
   #head .title {
     font-family: Alice, Georgia, serif;
@@ -251,8 +252,7 @@ html {
   }
   #head .tagline {
     display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     line-height: 1.2em;
     color: #cacaca;
     margin: 5px 0 0;
